@@ -1,2 +1,8 @@
-Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" | 
-Where-Object { $_.Id -eq 3 -and $_.Message -like '*powershell.exe*' }
+Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" |
+Where-Object { $_.Id -eq 1 } | 
+ForEach-Object {
+    $message = [xml]$_.ToXml()
+    if ($message.Event.EventData.Data -match 'Invoke-WebRequest') {
+        $_
+    }
+}
