@@ -1,2 +1,2 @@
 # benignscript.ps1
-Write-Output "This is a benign test script."
+Write-Output "This is a benign test script. Developed by Jatin Shrestha"
