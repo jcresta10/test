@@ -1,7 +1,16 @@
+C:\Users\Administrator\Downloads\Sysmon>sysmon -c sysmonconfig.xml
 
 
+System Monitor v15.15 - System activity monitor
+By Mark Russinovich and Thomas Garnier
+Copyright (C) 2014-2024 Microsoft Corporation
+Using libxml2. libxml2 is Copyright (C) 1998-2012 Daniel Veillard. All Rights Reserved.
+Sysinternals - www.sysinternals.com
 
-C:\Users\Administrator\Downloads\Sysmon>sc query sysmon64
-[SC] EnumQueryServicesStatus:OpenService FAILED 1060:
+Loading configuration file with schema version 4.50
+Sysmon schema version: 4.90
+Configuration file validated.
+Configuration updated.
 
-The specified service does not exist as an installed service.
+
+C:\Users\Administrator\Downloads\Sysmon>
