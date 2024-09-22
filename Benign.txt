@@ -1,1 +1,1 @@
-New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "MyBenignTask" -Value "C:\Windows\System32\notepad.exe" -PropertyType String
+Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" | Where-Object { $_.Id -eq 1 -and $_.Message -like '*Invoke-WebRequest*' }
